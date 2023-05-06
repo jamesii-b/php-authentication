@@ -46,8 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>";
     }
     ?>
-
-
     <form action="login.php" method="post">
         <label for="">Email here</label>
         <input type="text" name="email" id="">
