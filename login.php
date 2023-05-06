@@ -9,7 +9,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
 
     $sql = "Select * from `userinformation` WHERE Email='$email' and Password='".md5($password)."'";
-    echo $hash;
     $result = mysqli_query($conn, $sql);
     if (mysqli_num_rows($result) == 1 ) {
         $login = true;
@@ -64,6 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <a href="signup.php">
         Click here to signup
     </a>
+    <a href="welcome.html">HOME</a>
 </body>
 
 </html>

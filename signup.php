@@ -146,6 +146,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </div>
 
+
     <div>
         Signed Up before?
         <br>
@@ -153,6 +154,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             Login here
         </a>
+        <a href="home.php">home</a>
     </div>
 
     <!-- Optional JavaScript -->
