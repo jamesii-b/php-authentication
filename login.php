@@ -8,18 +8,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    $sql = "Select * from `userinformation` WHERE Email='$email' and Password='".md5($password)."'";
+    $sql = "Select * from `userinformation` WHERE Email='$email' and Password='" . md5($password) . "'";
     $result = mysqli_query($conn, $sql);
-    if (mysqli_num_rows($result) == 1 ) {
+    if (mysqli_num_rows($result) == 1) {
         $login = true;
         session_start();
         $_SESSION["loggedin"] = true;
         $_SESSION['email'] = $email;
         header("location: home.php");
-    }
-    else{
-        $error=true;
-
+    } else {
+        $error = true;
     }
 }
 ?>
