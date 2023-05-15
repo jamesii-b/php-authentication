@@ -154,7 +154,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             Login here
         </a>
-        <a href="home.php">home</a>
+        <a href="welcome.php">home</a>
     </div>
 
     <!-- Optional JavaScript -->

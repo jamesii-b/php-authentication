@@ -2,7 +2,9 @@
 //after login succedd
 session_start();
 if(!isset($_SESSION['loggedin'])|| $_SESSION['loggedin']!=true){
-    header("location:login.php");
+    echo"Please login to continue";
+    // include'login.php';
+    header("refresh:0.5;url=login.php");
     exit;
 }
 ?>
@@ -15,13 +17,8 @@ if(!isset($_SESSION['loggedin'])|| $_SESSION['loggedin']!=true){
     <title>Dashboard</title>
 </head>
 <body>
-    <?php
-    if($_SESSION['loggedin']=true){
-        echo`
-        <a href="logout.php">Logout</a><br>`;
-
-    }
-    ?>
+    <a href="welcome.php">Go to home</a>
+    <a href="logout.php">Logout</a><br>
     <div>
         Welcome to Dashboard
     </div>

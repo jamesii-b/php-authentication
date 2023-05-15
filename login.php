@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <a href="signup.php">
         Click here to signup
     </a>
-    <a href="welcome.html">HOME</a>
+    <a href="welcome.php">HOME</a>
 </body>
 
 </html>
